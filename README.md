@@ -13,7 +13,7 @@
 Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-   {
+  {
    "philosofonusus/morta.nvim",
     name = 'morta',
     priority = 1000,
