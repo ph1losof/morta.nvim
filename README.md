@@ -14,7 +14,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
    {
-    dir = '~/projects/morta',
+   "philosofonusus/morta.nvim",
     name = 'morta',
     priority = 1000,
     opts = {},
