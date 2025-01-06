@@ -2,7 +2,7 @@ local M = {}
 
 M.colors = {
   -- Base colors - Gentle mystical undertones
-  bg = "#1a1b26", -- Soft void background (from Tokyo Night)
+  bg = "#1A1B26", -- Soft void background (from Tokyo Night)
   bg_dark = "#16161e", -- Darker depth
   bg_highlight = "#292e42", -- Gentle mystical highlight
 
@@ -39,7 +39,7 @@ M.colors = {
 
   -- Git colors - Gentle markers
   git_add = "#9ece6a", -- Blessed green
-  git_change = "#7aa2f7", -- Calm change
+  git_change = "#e0af68", -- Calm change
   git_delete = "#F9778B", -- Soft removal
 
   -- Terminal colors - Soothing palette

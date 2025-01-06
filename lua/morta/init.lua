@@ -20,7 +20,6 @@ local defaults = {
   },
   plugins = {
     cmp = true,
-    telescope = true,
     treesitter = true,
     treesitter_context = true,
     lspsaga = true,
@@ -28,7 +27,6 @@ local defaults = {
     lazy = true,
     blink_cmp = true,
     gitsigns = true,
-    lualine = true,
     snacks = true,
     hipatterns = true,
   },

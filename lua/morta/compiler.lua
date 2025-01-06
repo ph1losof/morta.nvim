@@ -42,8 +42,10 @@ function M.compile(colors, config)
 
   local inspect = vim.inspect
   for group, spec in pairs(hl_tbl) do
-    if next(spec) then
+    if type(spec) == "table" and next(spec) then
       table.insert(lines, ('nvim_set_hl(0, "%s", %s)'):format(group, inspect(spec):gsub("%s", "")))
+    elseif type(spec) == "string" then
+      table.insert(lines, ('nvim_set_hl(0, "%s", { link = "%s" })'):format(group, spec))
     end
   end
 
