@@ -1,56 +1,56 @@
 local M = {}
 
 M.colors = {
-  -- Base colors - Soft pastel candy shop ambiance
-  bg = "#1F1A23", -- Soft purple-tinted darkness
-  bg_dark = "#191520", -- Gentle dark depth
-  bg_highlight = "#2D2435", -- Soft mystical highlight
+  -- Base colors - Gentle mystical undertones
+  bg = "#1a1b26", -- Soft void background (from Tokyo Night)
+  bg_dark = "#16161e", -- Darker depth
+  bg_highlight = "#292e42", -- Gentle mystical highlight
 
-  -- Primary accent colors - Soft pastel candy inspired
-  purple = "#C4A0F3", -- Soft grape taffy
-  red = "#FF9CAF", -- Cotton candy pink
-  blue = "#89C7FF", -- Pastel blue raspberry
-  gold = "#FFB570", -- Creamy caramel
+  -- Primary accent colors - Soothing ethereal tones
+  purple = "#bb9af7", -- Soft mystical purple (from Tokyo Night)
+  red = "#F9778B", -- Soft rose sigil
+  blue = "#7aa2f7", -- Calm celestial blue
+  gold = "#e0af68", -- Warm divine gold
 
-  -- Text colors - Gentle pastel contrast
-  fg = "#EBE3FF", -- Soft marshmallow white
-  fg_dark = "#C2B5E3", -- Gentle lavender cream
-  fg_gutter = "#463A54", -- Soft chocolate shadow
+  -- Text colors - Gentle contrast
+  fg = "#c0caf5", -- Soft ethereal white (from Tokyo Night)
+  fg_dark = "#a9b1d6", -- Calm secondary
+  fg_gutter = "#3b4261", -- Subtle shadow
 
-  -- UI elements - Soft candy wrapper accents
-  border = "#463A54", -- Gentle wrapper edge
-  cursor = "#C4A0F3", -- Soft grape cursor
-  selection = "#3D3147", -- Gentle grape shadow
+  -- UI elements - Soft mystical accents
+  border = "#29394f", -- Gentle borders
+  cursor = "#bb9af7", -- Matching soft purple
+  selection = "#2e3c64", -- Calm selection
 
-  -- Syntax highlighting - Pastel candy shop palette
-  string = "#A8E6B3", -- Soft mint candy
-  keyword = "#FF9CAF", -- Cotton candy
-  func = "#89C7FF", -- Pastel blue raspberry
-  constant = "#FFB570", -- Creamy caramel
-  type = "#7DE3D0", -- Soft mint ice cream
-  variable = "#EBE3FF", -- Soft marshmallow
-  comment = "#8B7BA1", -- Gentle grape shadow
+  -- Syntax highlighting - Soothing divine palette
+  string = "#9ece6a", -- Gentle nature green
+  keyword = "#F9778B", -- Soft rose sigil
+  func = "#7aa2f7", -- Calm arcane runes
+  constant = "#ff9e64", -- Warm amber
+  type = "#2ac3de", -- Serene cyan
+  variable = "#c0caf5", -- Gentle spirit
+  comment = "#565f89", -- Quiet whispers
 
-  -- Special highlights - Soft candy signals
-  warning = "#FFB570", -- Creamy caramel
-  error = "#FF9CAF", -- Cotton candy pink
-  info = "#89C7FF", -- Pastel blue raspberry
-  hint = "#7DE3D0", -- Soft mint
+  -- Special highlights - Gentle signals
+  warning = "#e0af68", -- Warm warning
+  error = "#F9778B", -- Soft error
+  info = "#7aa2f7", -- Calm info
+  hint = "#1abc9c", -- Serene hint
 
-  -- Git colors - Pastel candy markers
-  git_add = "#A8E6B3", -- Soft mint candy
-  git_change = "#FFB570", -- Creamy caramel
-  git_delete = "#FF9CAF", -- Cotton candy pink
+  -- Git colors - Gentle markers
+  git_add = "#9ece6a", -- Blessed green
+  git_change = "#7aa2f7", -- Calm change
+  git_delete = "#F9778B", -- Soft removal
 
-  -- Terminal colors - Soft candy shop terminal
-  terminal_black = "#1F1A23",
-  terminal_blue = "#89C7FF",
-  terminal_cyan = "#7DE3D0",
-  terminal_green = "#A8E6B3",
-  terminal_magenta = "#C4A0F3",
-  terminal_red = "#FF9CAF",
-  terminal_white = "#EBE3FF",
-  terminal_yellow = "#FFB570",
+  -- Terminal colors - Soothing palette
+  terminal_black = "#1a1b26",
+  terminal_blue = "#7aa2f7",
+  terminal_cyan = "#2ac3de",
+  terminal_green = "#9ece6a",
+  terminal_magenta = "#bb9af7",
+  terminal_red = "#F9778B",
+  terminal_white = "#c0caf5",
+  terminal_yellow = "#e0af68",
 }
 
 return M
