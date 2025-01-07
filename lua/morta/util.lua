@@ -43,4 +43,3 @@ function M.blend_bg(color, alpha)
 end
 
 return M
-

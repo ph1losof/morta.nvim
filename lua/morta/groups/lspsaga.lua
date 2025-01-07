@@ -22,7 +22,18 @@ function M.get(colors, config)
     ReferencesCount = { fg = colors.purple },
     ReferencesIcon = { fg = colors.blue },
     TargetWord = { fg = colors.cyan },
+
+    SagaFileName = { fg = colors.fg },
+    SagaFolderName = { fg = colors.gold },
+    SagaFolder = { fg = colors.gold },
+
+    SagaWinbar = { bg = colors.bg_float, fg = colors.fg },
+    SagaWinbarSep = { bg = colors.bg_float, fg = colors.border },
+    SagaWinbarFileName = { bg = colors.bg_float, fg = colors.fg },
+    SagaWinbarFolderName = { bg = colors.bg_float, fg = colors.gold },
+    SagaWinbarFolder = { bg = colors.bg_float, fg = colors.gold },
+    SagaWinbarFileIcon = { bg = colors.bg_float },
   }
 end
 
-return M 
+return M

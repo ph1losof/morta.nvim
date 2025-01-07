@@ -11,4 +11,3 @@ function M.get(colors, config)
 end
 
 return M
-

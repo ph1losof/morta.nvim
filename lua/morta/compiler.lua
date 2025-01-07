@@ -49,29 +49,6 @@ function M.compile(colors, config)
     end
   end
 
-  local term_colors = {
-    colors.terminal_black,
-    colors.terminal_red,
-    colors.terminal_green,
-    colors.terminal_yellow,
-    colors.terminal_blue,
-    colors.terminal_magenta,
-    colors.terminal_cyan,
-    colors.terminal_white,
-    colors.terminal_black,
-    colors.terminal_red,
-    colors.terminal_green,
-    colors.terminal_yellow,
-    colors.terminal_blue,
-    colors.terminal_magenta,
-    colors.terminal_cyan,
-    colors.terminal_white,
-  }
-
-  for i, color in ipairs(term_colors) do
-    table.insert(lines, string.format('g["terminal_color_%d"] = "%s"', i - 1, color))
-  end
-
   table.insert(lines, "end)")
 
   -- Write compiled content

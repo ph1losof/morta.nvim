@@ -1,9 +1,7 @@
 local M = {}
 
 local defaults = {
-  transparent_background = false,
   use_compiled = true,
-  terminal_colors = false,
   styles = {
     comments = { italic = true, bold = false },
     keywords = { italic = true, bold = true },
@@ -19,15 +17,19 @@ local defaults = {
     search = false,
   },
   plugins = {
-    cmp = true,
+    cmp = false,
     treesitter = true,
     treesitter_context = true,
     lspsaga = true,
+    kinds = true,
+    semantic = true,
     trouble = true,
     lazy = true,
     blink_cmp = true,
     gitsigns = true,
+    render_markdown = true,
     snacks = true,
+    mini_diff = true,
     hipatterns = true,
   },
 }
@@ -99,11 +101,6 @@ function M.load_dynamic()
   local palette = require("morta.palette")
   local highlights = require("morta.highlights")
   highlights.setup(palette.colors, M.config)
-
-  if M.config and M.config.terminal_colors == true then
-    local terminal = require("morta.terminal")
-    terminal.setup(palette.colors)
-  end
 end
 
 ---@param plugin string

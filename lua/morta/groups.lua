@@ -14,15 +14,19 @@ function M.load(colors, config)
   -- Load plugin highlight groups
   local plugins = {
     "morta.groups.blink_cmp",
-    "morta.groups.cmp",
     "morta.groups.gitsigns",
     "morta.groups.hipatterns",
     "morta.groups.lazy",
     "morta.groups.lspsaga",
+    "morta.groups.semantic",
     "morta.groups.snacks",
     "morta.groups.treesitter",
     "morta.groups.treesitter_context",
+    "morta.groups.mini_diff",
     "morta.groups.trouble",
+    "morta.groups.kinds",
+    "morta.groups.render_markdown",
+    "morta.groups.cmp",
   }
 
   for _, plugin in ipairs(plugins) do
