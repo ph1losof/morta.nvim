@@ -44,6 +44,28 @@ local function extend(table1, table2)
   return result
 end
 
+local function reset_cache()
+  local PATH_SEP = vim.loop.os_uname().version:match("Windows") and "\\" or "/"
+  local cache_path = table.concat({ vim.fn.stdpath("state"), "morta", "compiled.lua" }, PATH_SEP)
+  local ok, err = vim.loop.fs_unlink(cache_path)
+  if not ok and err and err:match("^ENOENT") == nil then
+    vim.notify("Morta: Error deleting cache: " .. err, vim.log.levels.WARN)
+  end
+end
+
+-- Create the MortaResetCache command
+vim.api.nvim_create_user_command("MortaResetCache", function()
+  reset_cache()
+  -- Recompile the theme after cache reset
+  if M.config and M.config.use_compiled then
+    local palette = require("morta.palette")
+    local compiler = require("morta.compiler")
+    compiler.compile(palette.colors, M.config)
+    compiler.load_compiled()
+  end
+  vim.notify("Morta: Cache has been reset and recompiled", vim.log.levels.INFO)
+end, {})
+
 function M.setup(opts)
   opts = opts or {}
   M.config = extend(defaults, opts)
