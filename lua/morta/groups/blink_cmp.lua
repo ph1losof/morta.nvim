@@ -1,7 +1,5 @@
 local M = {}
 
-local Util = require("morta.util")
-
 M.name = "blink_cmp"
 M.url = "https://github.com/Saghen/blink.cmp"
 

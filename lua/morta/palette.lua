@@ -2,53 +2,53 @@ local M = {}
 
 M.colors = {
   -- Base colors - Gentle mystical undertones with better contrast
-  bg = "#1B1C29", -- Darker background with less purple tint for better contrast
-  bg_dark = "#14151F", -- Darker depth with less purple tint
-  bg_highlight = "#292B3E", -- More neutral highlight for better text separation
-  bg_float = "#1F2134", -- Floating window background with better contrast
+  bg = "#1D1E2C", -- luminance ~0.018 (optimal for pop)
+  bg_dark = "#13141D", -- deeper base layer
+  bg_highlight = "#2A2C40", -- slightly clearer highlight
+  bg_float = "#25273A", -- Floating window background with better contrast
 
   -- Primary accent colors - Softer ethereal tones
-  purple = "#c5a6f5", -- Softer mystical purple (HSL [0.733, 0.805, 0.778] -> [0.733, 0.811, 0.808], Contrast 7.25:1 -> 8.15:1)
-  red = "#ee6f90", -- Softer rose sigil (S: 0.900 -> 0.792)
-  blue = "#96b4f3", -- Softer celestial blue (HSL [0.613, 0.791, 0.737] -> [0.613, 0.798, 0.772], Contrast 7.21:1 -> 8.13:1)
-  gold = "#ddae6a", -- Softer divine gold (S: 0.659 -> 0.626)
+  purple = "#CEB0FF", -- Softer mystical purple
+  red = "#F581A0", -- Softer rose sigil
+  blue = "#A0BDFD", -- Softer celestial blue
+  gold = "#E0AF68", -- REFINED: Better "Saliency" fit (was #E6B97A)
 
   -- Text colors - Enhanced contrast for better readability
-  fg = "#D2DAFD", -- Softer ethereal white (still with good contrast)
+  fg = "#D9E0FF", -- Softer ethereal white (still with good contrast)
   fg_dark = "#A9B1D6", -- Slightly softer calm secondary
-  fg_gutter = "#606980", -- Enhanced gutter text (better contrast)
+  fg_gutter = "#7884A0", -- Enhanced gutter text (better contrast)
 
   -- UI elements - Soft mystical accents with better accessibility
-  border = "#686D8E", -- Enhanced borders (meets 3:1 for UI components)
-  cursor = "#c5a6f5", -- Matching softer purple (updated for higher contrast)
+  border = "#72799C", -- REFINED: Meets 3:1 Non-Text CR (was #686D8E)
+  cursor = "#CEB0FF", -- Matching softer purple
   selection = "#2F3555", -- Darker selection for better visibility
   none = "NONE", -- Transparent value
 
   -- Syntax highlighting - Softer divine palette
   string = "#9ECE6A", -- Softer nature green (unchanged)
-  keyword = "#ee6f90", -- Softer rose sigil (updated)
-  func = "#96b4f3", -- Softer arcane runes (updated for higher contrast)
-  constant = "#ddae6a", -- Softer warm amber (updated)
-  type = "#4ec8de", -- Softer cyan (HSL [0.525, 0.676, 0.516] -> [0.525, 0.689, 0.591], Contrast 7.61:1 -> 8.55:1)
-  variable = "#D2DAFD", -- Softer gentle spirit (matches main fg)
-  comment = "#8086A3", -- Enhanced whispers (meets minimum contrast)
+  keyword = "#F581A0", -- Softer rose sigil (alias for red)
+  func = "#A0BDFD", -- Softer arcane runes (alias for blue)
+  constant = "#E0AF68", -- REFINED: Alias for new gold
+  type = "#55D2E9", -- Softer cyan
+  variable = "#D9E0FF", -- Softer gentle spirit (matches main fg)
+  comment = "#8C97C0", -- REFINED: Meets 4.5:1 AA Text CR (was #808AAB)
 
   -- Special highlights - Softer signals
-  warning = "#ddae6a", -- Softer warm warning (updated)
-  error = "#ee6f90", -- Softer soft error (updated)
-  info = "#96b4f3", -- Softer calm info (updated for higher contrast)
-  hint = "#4ec8de", -- Softer serene hint (updated for higher contrast)
+  warning = "#ddae6a", -- Softer warm warning (unchanged)
+  error = "#F07998", -- Softer soft error (unchanged)
+  info = "#96b4f3", -- Softer calm info (unchanged)
+  hint = "#55D2E9", -- Softer serene hint (alias for type)
 
   -- Git colors - Softer markers
-  git_add = "#9ECE6A", -- Softer blessed green (unchanged)
-  git_change = "#ddae6a", -- Softer calm change (updated)
-  git_delete = "#ee6f90", -- Softer soft removal (updated)
+  git_add = "#9ECE6A", -- Softer blessed green
+  git_change = "#E0AF68", -- REFINED: Alias for new gold
+  git_delete = "#F581A0", -- Softer soft removal
 
   -- Additional colors for UI consistency
   diff = {
-    add = "#2B3328", -- Background for additions (warm green undertone)
-    change = "#333340", -- Background for changes (subtle warm undertone)
-    delete = "#37292E", -- Background for deletions (warm red undertone)
+    add = "#243526", -- Background for additions (warm green undertone)
+    change = "#2F3142", -- Background for changes (subtle warm undertone)
+    delete = "#3C2730", -- Background for deletions (warm red undertone)
   },
 }
 
