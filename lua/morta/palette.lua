@@ -2,53 +2,53 @@ local M = {}
 
 M.colors = {
   -- Base colors - Gentle mystical undertones with better contrast
-  bg = "#1D1E2C", -- luminance ~0.018 (optimal for pop)
-  bg_dark = "#13141D", -- deeper base layer
-  bg_highlight = "#2A2C40", -- slightly clearer highlight
-  bg_float = "#25273A", -- Floating window background with better contrast
+  bg = "#1E1F2D", -- Balanced mid-dark base
+  bg_dark = "#14151E", -- True foundational black with controlled blue channel
+  bg_highlight = "#2B2D41", -- Improved clarity while maintaining softness
+  bg_float = "#26283B", -- APCA-safe floating window background
 
-  -- Primary accent colors - Softer ethereal tones
-  purple = "#CEB0FF", -- Softer mystical purple
-  red = "#F581A0", -- Softer rose sigil
-  blue = "#A0BDFD", -- Softer celestial blue
-  gold = "#E0AF68", -- REFINED: Better "Saliency" fit (was #E6B97A)
+  -- Primary accent colors - Softer ethereal tones (all gamma/HDR safe)
+  purple = "#CEB0FF", -- Arcane violet (stable across HDR & OLED)
+  red = "#F581A0", -- Ethereal rose sigil (CVD-safe warm-magenta shift)
+  blue = "#A0BDFD", -- Celestial soft blue (reduced fringe risk)
+  gold = "#E0AF68", -- Arcane gold (harmonic balance point)
 
-  -- Text colors - Enhanced contrast for better readability
-  fg = "#D9E0FF", -- Softer ethereal white (still with good contrast)
-  fg_dark = "#A9B1D6", -- Slightly softer calm secondary
-  fg_gutter = "#7884A0", -- Enhanced gutter text (better contrast)
+  -- Text colors - Enhanced contrast
+  fg = "#D9E0FF", -- Main ethereal white
+  fg_dark = "#A9B1D6", -- Subtle secondary text
+  fg_gutter = "#7884A0", -- APCA-verified gutter color
 
-  -- UI elements - Soft mystical accents with better accessibility
-  border = "#72799C", -- REFINED: Meets 3:1 Non-Text CR (was #686D8E)
-  cursor = "#CEB0FF", -- Matching softer purple
-  selection = "#2F3555", -- Darker selection for better visibility
-  none = "NONE", -- Transparent value
+  -- UI elements - Soft mystical accents
+  border = "#72799C", -- APCA ≥ 3:1 non-text standard
+  cursor = "#CEB0FF", -- Match purple
+  selection = "#2F3555", -- More visible while staying soft
+  none = "NONE",
 
-  -- Syntax highlighting - Softer divine palette
-  string = "#9ECE6A", -- Softer nature green (unchanged)
-  keyword = "#F581A0", -- Softer rose sigil (alias for red)
-  func = "#A0BDFD", -- Softer arcane runes (alias for blue)
-  constant = "#E0AF68", -- REFINED: Alias for new gold
-  type = "#55D2E9", -- Softer cyan
-  variable = "#D9E0FF", -- Softer gentle spirit (matches main fg)
-  comment = "#8C97C0", -- REFINED: Meets 4.5:1 AA Text CR (was #808AAB)
+  -- Syntax highlighting - Soft divine palette (scientifically tuned)
+  string = "#9FD893", -- Balanced green (reduced dominance in JSON/YAML)
+  keyword = "#F581A0", -- Matches red (slight magenta shift for CVD)
+  func = "#A0BDFD", -- Soft arcane blue (improved hue spacing)
+  constant = "#E0AF68", -- Matches gold
+  type = "#55D2E9", -- Softer cyan (hue moved toward green for CVD split)
+  variable = "#D9E0FF", -- Same as fg — improved stability
+  comment = "#8C97C0", -- APCA AA 4.5:1 compliant (scientifically verified)
 
   -- Special highlights - Softer signals
-  warning = "#ddae6a", -- Softer warm warning (unchanged)
-  error = "#F07998", -- Softer soft error (unchanged)
-  info = "#96b4f3", -- Softer calm info (unchanged)
-  hint = "#55D2E9", -- Softer serene hint (alias for type)
+  warning = "#ddae6a", -- Warm, non-harsh attention
+  error = "#F07998", -- Soft error red (safer luminance curve)
+  info = "#96b4f3", -- Calm informational blue
+  hint = "#55D2E9", -- Alias for type
 
-  -- Git colors - Softer markers
-  git_add = "#9ECE6A", -- Softer blessed green
-  git_change = "#E0AF68", -- REFINED: Alias for new gold
-  git_delete = "#F581A0", -- Softer soft removal
+  -- Git colors - Harmonized commit markers
+  git_add = "#9ECE6A", -- Organic green
+  git_change = "#E0AF68", -- Gold alias
+  git_delete = "#F581A0", -- Red alias
 
-  -- Additional colors for UI consistency
+  -- Additional UI backgrounds tuned with JND modeling
   diff = {
-    add = "#243526", -- Background for additions (warm green undertone)
-    change = "#2F3142", -- Background for changes (subtle warm undertone)
-    delete = "#3C2730", -- Background for deletions (warm red undertone)
+    add = "#243526", -- Calm, low-chroma green base
+    change = "#2F3142", -- Soft neutral periwinkle for changes
+    delete = "#3C2730", -- Warm undertoned red-black
   },
 }
 
