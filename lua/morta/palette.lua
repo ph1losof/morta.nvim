@@ -26,18 +26,18 @@ M.colors = {
 
   -- Syntax highlighting - Soft divine palette (scientifically tuned)
   string = "#9FD893", -- Balanced green (reduced dominance in JSON/YAML)
-  keyword = "#F581A0", -- Matches red (slight magenta shift for CVD)
+  keyword = "#FE99C0", -- v2 rose, lifted to APCA Lc 62 and nudged 8° magenta to clear error
   func = "#A0BDFD", -- Soft arcane blue (improved hue spacing)
   constant = "#E0AF68", -- Matches gold
   type = "#55D2E9", -- Softer cyan (hue moved toward green for CVD split)
   variable = "#D9E0FF", -- Same as fg — improved stability
-  comment = "#8C97C0", -- APCA AA 4.5:1 compliant (scientifically verified)
+  comment = "#929DC7", -- Lc 48: readable, still dimmer than every accent
 
   -- Special highlights - Softer signals (CVD-optimized)
   warning = "#f0c078", -- Brighter gold, distinct from constant for CVD
-  error = "#F07998", -- Soft error red (safer luminance curve)
-  info = "#96b4f3", -- Calm informational blue
-  hint = "#96b4f3", -- Uses info color (distinct from type for CVD)
+  error = "#FF9C82", -- Coral: the most saturated diagnostic, clear of keyword
+  info = "#A2BFFE", -- Lc 66, above hint
+  hint = "#75C4BA", -- Lc 61 muted teal, the quietest diagnostic
 
   -- Git colors - Harmonized commit markers (CVD-optimized)
   git_add = "#9ECE6A", -- Organic green
@@ -55,5 +55,10 @@ M.colors = {
 -- Set alias colors for backward compatibility
 M.colors.gray = M.colors.fg_gutter
 M.colors.cyan = M.colors.type
+-- Referenced by group files but never defined in v2, which left those groups uncoloured.
+M.colors.green = M.colors.string
+M.colors.yellow = M.colors.warning
+M.colors.magenta = M.colors.purple
+M.colors.termminal_white = M.colors.fg
 
 return M

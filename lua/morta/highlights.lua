@@ -139,7 +139,12 @@ end
 function M.setup(colors, config)
   local highlights = M.get_highlights(colors, config)
   for group, opts in pairs(highlights) do
-    vim.api.nvim_set_hl(0, group, opts)
+    -- Group files may return a string to mean "link to this group", as the compiler already handles.
+    if type(opts) == "string" then
+      vim.api.nvim_set_hl(0, group, { link = opts })
+    else
+      vim.api.nvim_set_hl(0, group, opts)
+    end
   end
 end
 

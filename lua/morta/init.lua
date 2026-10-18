@@ -81,10 +81,10 @@ function M.setup(opts)
 
   if M.config.use_compiled then
     local compiler = require("morta.compiler")
-    local success = compiler.load_compiled()
+    local palette = require("morta.palette")
+    local success = compiler.load_compiled(palette.colors, M.config)
 
     if not success then
-      local palette = require("morta.palette")
       compiler.compile(palette.colors, M.config)
       success = compiler.load_compiled()
     end
